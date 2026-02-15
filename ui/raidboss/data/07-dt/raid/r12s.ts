@@ -1671,15 +1671,19 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         northSouthCleaves: {
           en: 'North/South Cleaves',
+          ko: '북/남 부채꼴',
         },
         eastWestCleaves: {
           en: 'East/West Cleaves',
+          ko: '동/서 부채꼴',
         },
         northSouthCleaves2: {
           en: 'North/South Cleaves',
+          ko: '북/남 부채꼴',
         },
         eastWestCleaves2: {
           en: 'East/West Cleaves',
+          ko: '동/서 부채꼴',
         },
       },
     },
@@ -1713,9 +1717,11 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         fire: {
           en: 'Fire Debuff: Spread near Dark (later)',
+          ko: '불 디버프: 어둠 근처 산개 (나중에)',
         },
         dark: {
           en: 'Dark Debuff: Stack near Fire (later)',
+          ko: '어둠 디버프: 불 근처 쉐어 (나중에)',
         },
       },
     },
@@ -1735,6 +1741,7 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         noDebuff: {
           en: 'No Debuff: Spread near Dark (later)',
+          ko: '디버프 없음: 어둠 근처 산개 (나중에)',
         },
       },
     },
@@ -1763,6 +1770,7 @@ const triggerSet: TriggerSet<Data> = {
         getBehind: Outputs.getBehind,
         getBehindDir: {
           en: '${dir}: ${mech}',
+          ko: '${dir}: ${mech}',
         },
       },
     },
@@ -1869,9 +1877,11 @@ const triggerSet: TriggerSet<Data> = {
         ...Directions.outputStringsIntercardDir, // Cardinals should result in '???'
         fire: {
           en: 'Bait Fire In ${dir1}/Out ${dir2} (Partners)',
+          ko: '불 안 ${dir1}/바깥 ${dir2} 유도 (파트너)',
         },
         dark: {
           en: 'Bait Dark In ${dir1}/Out ${dir2} (Solo)',
+          ko: '어둠 안 ${dir1}/바깥 ${dir2} 유도 (혼자)',
         },
       },
     },
@@ -1927,6 +1937,7 @@ const triggerSet: TriggerSet<Data> = {
         getBehind: Outputs.getBehind,
         getBehindDir: {
           en: '${dir}: ${mech}',
+          ko: '${dir}: ${mech}',
         },
       },
     },
@@ -1987,9 +1998,11 @@ const triggerSet: TriggerSet<Data> = {
         ...Directions.outputStrings8Dir,
         cloneTether: {
           en: 'Tethered to Clone',
+          ko: '분신과 연결됨',
         },
         cloneTetherDir: {
           en: 'Tethered to ${dir} Clone',
+          ko: '${dir} 분신과 연결됨',
         },
       },
     },
@@ -2221,54 +2234,71 @@ const triggerSet: TriggerSet<Data> = {
         ...Directions.outputStrings8Dir,
         projectionTether: {
           en: 'Cone Tether on YOU',
+          ko: '부채꼴 선 대상자',
         },
         projectionTetherDir: {
           en: '${dir} Cone Tether on YOU',
+          ko: '${dir} 부채꼴 선 대상자',
         },
         manaBurstTether: {
           en: 'Defamation Tether on YOU',
+          ko: '광역징 선 대상자',
         },
         manaBurstTetherDir: {
           en: '${dir} Defamation Tether on YOU',
+          ko: '${dir} 광역징 선 대상자',
         },
         heavySlamTether: {
           en: 'Stack Tether on YOU',
+          ko: '쉐어징 선 대상자',
         },
         heavySlamTetherDir: {
           en: '${dir} Stack Tether on YOU',
+          ko: '${dir} 쉐어징 선 대상자',
         },
         fireballSplashTether: {
           en: 'Boss Tether on YOU',
+          ko: '보스 선 대상자',
         },
         tetherGetTether: {
           en: '${tether1}; ${tether2}',
+          ko: '${tether1}; ${tether2}',
         },
         getTether: {
           en: 'Get Tether',
+          ko: '선 가져가기',
         },
         getTetherNClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherNEClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherEClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherSEClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherSClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherSWClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherWClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
         getTetherNWClone: {
           en: '${tether}',
+          ko: '${tether}',
         },
       },
     },
@@ -2329,30 +2359,39 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         noTether: {
           en: 'No Tether on YOU',
+          ko: '선 없음 대상자',
         },
         noTetherCloneN: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneNE: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneE: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneSE: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneS: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneSW: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneW: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
         noTetherCloneNW: {
           en: '${noTether}',
+          ko: '${noTether}',
         },
       },
     },
@@ -2490,30 +2529,39 @@ const triggerSet: TriggerSet<Data> = {
         defamationOnYou: Outputs.defamationOnYou,
         baitProtean: {
           en: 'Bait Protean from Boss',
+          ko: '보스의 부채꼴 유도',
         },
         baitJump: {
           en: 'Bait Jump',
+          ko: '점프 유도',
         },
         projectionTetherDir: {
           en: '${dir} Cone Tether: ${mech1}',
+          ko: '${dir} 부채꼴 선: ${mech1}',
         },
         projectionTether: {
           en: 'Cone Tether: ${mech1}',
+          ko: '부채꼴 선: ${mech1}',
         },
         manaBurstTetherDir: {
           en: '${dir} Defamation Tether: ${mech1}',
+          ko: '${dir} 광역징 선: ${mech1}',
         },
         manaBurstTether: {
           en: 'Defamation Tether: ${mech1}',
+          ko: '광역징 선: ${mech1}',
         },
         heavySlamTetherDir: {
           en: '${dir} Stack Tether: ${mech1}',
+          ko: '${dir} 쉐어징 선: ${mech1}',
         },
         heavySlamTether: {
           en: 'Stack Tether: ${mech1}',
+          ko: '쉐어징 선: ${mech1}',
         },
         fireballSplashTether: {
           en: 'Boss Tether: ${mech1}',
+          ko: '보스 선: ${mech1}',
         },
       },
     },
@@ -2553,6 +2601,7 @@ const triggerSet: TriggerSet<Data> = {
         },
         noTether: {
           en: 'No Tether: ${mech1} => ${mech2}',
+          ko: '선 없음: ${mech1} => ${mech2}',
         },
       },
     },
@@ -2607,18 +2656,23 @@ const triggerSet: TriggerSet<Data> = {
         stackOnYou: Outputs.stackOnYou,
         projectionTether: {
           en: '${mech1} + ${mech2} => ${mech3}',
+          ko: '${mech1} + ${mech2} => ${mech3}',
         },
         manaBurstTether: {
           en: '${mech1} => ${mech2}',
+          ko: '${mech1} => ${mech2}',
         },
         heavySlamTether: {
           en: '${mech1} => ${mech2}',
+          ko: '${mech1} => ${mech2}',
         },
         fireballSplashTether: {
           en: '${mech1} => ${mech2}',
+          ko: '${mech1} => ${mech2}',
         },
         noTether: {
           en: '${mech1} => ${mech2}',
+          ko: '${mech1} => ${mech2}',
         },
       },
     },
@@ -2653,6 +2707,7 @@ const triggerSet: TriggerSet<Data> = {
         getBehind: Outputs.getBehind,
         getBehindDir: {
           en: '${dir}: ${mech}',
+          ko: '${dir}: ${mech}',
         },
       },
     },
@@ -2748,12 +2803,15 @@ const triggerSet: TriggerSet<Data> = {
         stacks: Outputs.stacks,
         proteans: {
           en: 'Proteans',
+          ko: '부채꼴',
         },
         beNear: {
           en: 'Be Near',
+          ko: '가까이 있기',
         },
         beFar: {
           en: 'Be Far',
+          ko: '멀리 있기',
         },
         near: {
           en: 'Near',
@@ -2771,33 +2829,43 @@ const triggerSet: TriggerSet<Data> = {
         },
         projectionTetherFar: {
           en: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
+          ko: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
         },
         manaBurstTetherFar: {
           en: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
+          ko: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
         },
         heavySlamTetherFar: {
           en: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
+          ko: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
         },
         fireballSplashTetherFar: {
           en: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
+          ko: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
         },
         noTetherFar: {
           en: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
+          ko: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
         },
         projectionTetherNear: {
           en: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
+          ko: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
         },
         manaBurstTetherNear: {
           en: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
+          ko: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
         },
         heavySlamTetherNear: {
           en: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
+          ko: '${proteanBaits} + ${mech1} (${mech2} ${spiteBaits})',
         },
         fireballSplashTetherNear: {
           en: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
+          ko: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
         },
         noTetherNear: {
           en: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
+          ko: '${spiteBaits} + ${mech1} (${mech2} ${proteanBaits})',
         },
       },
     },
@@ -2841,6 +2909,7 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         text: {
           en: 'East/West Clone Stacks',
+          ko: '동/서 분신 쉐어',
         },
       },
     },
@@ -2940,15 +3009,19 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         alpha: {
           en: 'Mutation α on YOU',
+          ko: '변이세포 α 대상자',
         },
         beta: {
           en: 'Mutation β on YOU',
+          ko: '변이세포 β 대상자',
         },
         alphaTts: {
           en: 'Mutation α on YOU',
+          ko: '변이세포 알파 대상자',
         },
         betaTts: {
           en: 'Mutation β on YOU',
+          ko: '변이세포 베타 대상자',
         },
       },
     },
@@ -3069,27 +3142,35 @@ const triggerSet: TriggerSet<Data> = {
         },
         water: {
           en: 'Orb',
+          ko: '구슬',
         },
         lightning: {
           en: 'Lightning',
+          ko: '번개',
         },
         fire: {
           en: 'Fire',
+          ko: '불',
         },
         wind: {
           en: 'Donut',
+          ko: '도넛',
         },
         alpha: {
           en: 'Avoid Shape AoEs, Wait by Black Hole',
+          ko: '도형 장판 피하기, 도형 본체 옆에서 대기',
         },
         beta: {
           en: 'Shared Shape Soak => Get by Black Hole',
+          ko: '도형 쉐어 처리 => 도형 본체 옆으로 이동',
         },
         alphaDir: {
           en: 'Avoid ${dir1} Shape AoEs => ${dir2} Black Hole + ${northSouth}',
+          ko: '${dir1} 도형 장판 피하기 => ${dir2} 도형 본체 + ${northSouth}',
         },
         betaDir: {
           en: 'Share ${dir1} ${shape1}/${shape2} => ${dir2} Black Hole + ${northSouth}',
+          ko: '${dir1} ${shape1}/${shape2} 쉐어 => ${dir2} 도형 본체 + ${northSouth}',
         },
       },
     },
@@ -3127,15 +3208,19 @@ const triggerSet: TriggerSet<Data> = {
         },
         alpha: {
           en: 'Get by Black Hole',
+          ko: '도형 본체 옆으로 이동',
         },
         beta: {
           en: 'Get by Black Hole',
+          ko: '도형 본체 옆으로 이동',
         },
         alphaDir: {
           en: '${dir2} Black Hole + ${northSouth}',
+          ko: '${dir2} 도형 본체 + ${northSouth}',
         },
         betaDir: {
           en: '${dir2} Black Hole + ${northSouth}',
+          ko: '${dir2} 도형 본체 + ${northSouth}',
         },
       },
     },
@@ -3173,9 +3258,11 @@ const triggerSet: TriggerSet<Data> = {
         },
         move: {
           en: 'Move to other Black Hole',
+          ko: '다른 도형 본체로 이동',
         },
         moveDir: {
           en: '${dir} Black Hole + ${northSouth}',
+          ko: '${dir} 도형 본체 + ${northSouth}',
         },
       },
     },
@@ -3205,24 +3292,31 @@ const triggerSet: TriggerSet<Data> = {
         getUnder: Outputs.getUnder,
         maxMelee: {
           en: 'Max Melee',
+          ko: '칼끝딜',
         },
         alphaNear: {
           en: '${mech} (Avoid Near Stack)',
+          ko: '${mech} (근거리 쉐어 피하기)',
         },
         alphaFar: {
           en: '${mech} (Avoid Far Stack)',
+          ko: '${mech} (원거리 쉐어 피하기)',
         },
         betaNear: {
           en: 'Near β Stack: ${mech}',
+          ko: '근거리 β 쉐어: ${mech}',
         },
         betaFar: {
           en: 'Far β Stack: ${mech}',
+          ko: '원거리 β 쉐어: ${mech}',
         },
         betaNearTts: {
           en: 'Near β Stack: ${mech}',
+          ko: '근거리 베타 쉐어: ${mech}',
         },
         betaFarTts: {
           en: 'Far β Stack: ${mech}',
+          ko: '원거리 베타 쉐어: ${mech}',
         },
       },
     },
@@ -3276,6 +3370,7 @@ const triggerSet: TriggerSet<Data> = {
         intercards: Outputs.intercards,
         firstClone: {
           en: 'First Clone: ${cards}',
+          ko: '첫 번째 분신: ${cards}',
         },
       },
     },
@@ -3328,9 +3423,11 @@ const triggerSet: TriggerSet<Data> = {
         ...Directions.outputStrings8Dir,
         cloneTether: {
           en: 'Tethered to Clone',
+          ko: '분신과 선 연결',
         },
         cloneTetherDir: {
           en: 'Tethered to ${dir} Clone',
+          ko: '${dir} 분신과 선 연결',
         },
       },
     },
@@ -3378,6 +3475,7 @@ const triggerSet: TriggerSet<Data> = {
         sides: Outputs.sides,
         text: {
           en: '${dir} + ${sides} (later)',
+          ko: '${dir} + ${sides} (나중에)',
         },
       },
     },
@@ -3470,9 +3568,11 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         getTether: {
           en: 'Get Tether',
+          ko: '선 가져가기',
         },
         mechLater: {
           en: '${mech} First (later)',
+          ko: '${mech} 먼저 (나중에)',
         },
         defamations: {
           en: 'Defamations',
@@ -3480,36 +3580,45 @@ const triggerSet: TriggerSet<Data> = {
           fr: 'Grosse AoE sur vous',
           ja: '自分に巨大な爆発',
           cn: '大圈点名',
-          ko: '광역 대상자',
+          ko: '광역징',
           tc: '大圈點名',
         },
         stacks: Outputs.stacks,
         mechLaterTether: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterNClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterNEClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterEClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterSEClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterSClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterSWClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterWClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
         mechLaterNWClone: {
           en: '${later}; ${tether}',
+          ko: '${later}; ${tether}',
         },
       },
     },
@@ -3644,21 +3753,27 @@ const triggerSet: TriggerSet<Data> = {
         healerGroups: Outputs.healerGroups,
         meteorAoe: {
           en: '${bigAoe} + ${groups}',
+          ko: '${bigAoe} + ${groups}',
         },
         dodgeCleaves: {
           en: '${dir} + ${sides}',
+          ko: '${dir} + ${sides}',
         },
         manaBurstTetherDir: {
           en: '${dodgeCleaves} (${dir} Defamation Tether)  => ${meteorAoe}',
+          ko: '${dodgeCleaves} (${dir} 광역징 선)  => ${meteorAoe}',
         },
         manaBurstTether: {
           en: ' N/S Clone (Defamation Tether) => ${meteorAoe}',
+          ko: ' 북/남 분신 (광역징 선) => ${meteorAoe}',
         },
         heavySlamTetherDir: {
           en: '${dodgeCleaves} (${dir} Stack Tether)  => ${meteorAoe}',
+          ko: '${dodgeCleaves} (${dir} 쉐어징 선)  => ${meteorAoe}',
         },
         heavySlamTether: {
           en: ' N/S Clone (Stack Tether) => ${meteorAoe}',
+          ko: ' 북/남 분신 (쉐어징 선) => ${meteorAoe}',
         },
       },
     },
@@ -3690,6 +3805,7 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         text: {
           en: 'Soak Fire/Earth Meteor (later)',
+          ko: '불/땅 메테오 밟기 (나중에)',
         },
       },
     },
@@ -3707,6 +3823,7 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         text: {
           en: 'Soak a White/Star Meteor (later)',
+          ko: '바람/어둠 메테오 밟기 (나중에)',
         },
       },
     },
@@ -3722,25 +3839,32 @@ const triggerSet: TriggerSet<Data> = {
           stackOnYou: Outputs.stackOnYou,
           defamations: {
             en: 'Avoid Defamations',
+            ko: '광역징 피하기',
           },
           defamationOnYou: Outputs.defamationOnYou,
           stacksThenDefamations: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           defamationsThenStacks: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           stacksThenDefamationOnYou: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           defamationsThenStackOnYou: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           stackOnYouThenDefamations: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           defamationOnYouThenStack: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
         };
         const player1 = data.replication4BossCloneDirNumPlayers[0];
@@ -3830,25 +3954,32 @@ const triggerSet: TriggerSet<Data> = {
           stackOnYou: Outputs.stackOnYou,
           defamations: {
             en: 'Avoid Defamations',
+            ko: '광역징 피하기',
           },
           defamationOnYou: Outputs.defamationOnYou,
           stacksThenDefamations: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           defamationsThenStacks: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           stacksThenDefamationOnYou: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           defamationsThenStackOnYou: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           stackOnYouThenDefamations: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           defamationOnYouThenStack: {
             en: '${mech1} => ${mech2}',
+            ko: '${mech1} => ${mech2}',
           },
           towers: {
             en: 'Tower Positions',
@@ -3856,7 +3987,7 @@ const triggerSet: TriggerSet<Data> = {
             fr: 'Position tour',
             ja: '塔の位置へ',
             cn: '八人塔站位',
-            ko: '기둥 자리잡기',
+            ko: '탑 자리잡기',
             tc: '八人塔站位',
           },
         };
@@ -4004,9 +4135,11 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         fireEarthTower: {
           en: 'Soak Fire/Earth Meteor',
+          ko: '불/땅 메테오 밟기',
         },
         holyTower: {
           en: 'Soak a White/Star Meteor',
+          ko: '바람/어둠 메테오 밟기',
         },
       },
     },
@@ -4039,6 +4172,7 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         avoidEarthTower: {
           en: 'Avoid Earth Tower',
+          ko: '땅 탑 피하기',
         },
       },
     },
@@ -4083,6 +4217,7 @@ const triggerSet: TriggerSet<Data> = {
         },
         cleanseDoom2: {
           en: 'Cleanse ${target1}/${target2}',
+          ko: '${target1}/${target2} 에스나',
         },
       },
     },
@@ -4136,39 +4271,51 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         nearOnYouWindDN: {
           en: 'Near on YOU: Be on Middle Hitbox',
+          ko: '근거리 대상자: 히트박스 중앙에 서기',
         },
         nearOnYouDarkDN: {
           en: 'Near on YOU: Be on Hitbox N',
+          ko: '근거리 대상자: 히트박스 북쪽에 서기',
         },
         farOnYouWindDN: {
           en: 'Far on YOU: Be on Middle Hitbox',
+          ko: '원거리 대상자: 히트박스 중앙에 서기',
         },
         farOnYouDarkDN: {
           en: 'Far on YOU: Be on Hitbox N',
+          ko: '원거리 대상자: 히트박스 북쪽에 서기',
         },
         nearOnYouWindZenith: {
           en: 'Near on YOU: Max Melee N',
+          ko: '근거리 대상자: 북쪽 칼끝딜',
         },
         nearOnYouDarkZenith: {
           en: 'Near on YOU: Be on Middle Hitbox (Lean North)',
+          ko: '근거리 대상자: 히트박스 중앙에 서기 (약간 북쪽)',
         },
         farOnYouWindZenith: {
           en: 'Far on YOU: Max Melee N',
+          ko: '원거리 대상자: 북쪽 칼끝딜',
         },
         farOnYouDarkZenith: {
           en: 'Far on YOU: Be on Middle Hitbox (Lean North)',
+          ko: '원거리 대상자: 히트박스 중앙에 서기 (약간 북쪽)',
         },
         nearOnYouWind: {
           en: 'Wind: Near on YOU',
+          ko: '바람: 근거리 대상자',
         },
         nearOnYouDark: {
           en: 'Dark: Near on YOU',
+          ko: '어둠: 근거리 대상자',
         },
         farOnYouWind: {
           en: 'Wind: Far on YOU',
+          ko: '바람: 원거리 대상자',
         },
         farOnYouDark: {
           en: 'Dark: Far on YOU',
+          ko: '어둠: 원거리 대상자',
         },
       },
     },
@@ -4201,21 +4348,27 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         baitFireDN: {
           en: 'Bait Cone N/S Max Melee',
+          ko: '북/남 부채꼴 유도 칼끝딜',
         },
         baitEarthDN: {
           en: 'Bait Cone N/S Max Melee',
+          ko: '북/남 부채꼴 유도 칼끝딜',
         },
         baitFireZenith: {
           en: 'Bait Cone S, Max Melee',
+          ko: '남쪽 부채꼴 유도 칼끝딜',
         },
         baitEarthZenith: {
           en: 'Bait Cone Middle, Max Melee (Lean North)',
+          ko: '중앙 부채꼴 유도 칼끝딜 (약간 북쪽)',
         },
         baitFire: {
           en: 'Fire: Bait Cone',
+          ko: '불: 부채꼴 유도',
         },
         baitEarth: {
           en: 'Earth: Bait Cone',
+          ko: '땅: 부채꼴 유도',
         },
       },
     },
@@ -4250,9 +4403,11 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         frontBackLater: {
           en: 'Portal + Front/Back Clone (later)',
+          ko: '포탈 + 앞/뒤 분신 (나중에)',
         },
         sidesLater: {
           en: 'Portal + Sides Clone (later)',
+          ko: '포탈 + 양 옆 분신 (나중에)',
         },
       },
     },
@@ -4298,15 +4453,19 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         frontBackWestLater: {
           en: 'West Platform => Front/Back Clone (later)',
+          ko: '서쪽 플랫폼 => 앞/뒤 분신 (나중에)',
         },
         sidesWestLater: {
           en: 'West Platform => Sides Clone (later)',
+          ko: '서쪽 플랫폼 => 양 옆 분신 (나중에)',
         },
         frontBackEastLater: {
           en: 'East Platform => Front/Back Clone (later)',
+          ko: '동쪽 플랫폼 => 앞/뒤 분신 (나중에)',
         },
         sidesEastLater: {
           en: 'East Platform => Sides Clone (later)',
+          ko: '동쪽 플랫폼 => 양 옆 분신 (나중에)',
         },
       },
     },
@@ -4351,6 +4510,7 @@ const triggerSet: TriggerSet<Data> = {
         intercards: Outputs.intercards,
         stack: {
           en: 'Stack ${dir1}/${dir2} + Lean Middle Out',
+          ko: '${dir1}/${dir2} 쉐어 + 중앙 바깥쪽으로 빼기',
         },
       },
     },
@@ -4378,18 +4538,23 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         safePlatform: {
           en: 'Move to Safe Platform Side => Dodge Cleaves',
+          ko: '안전한 플랫폼 쪽으로 이동 => 부채꼴 피하기',
         },
         sidesWestPlatform: {
           en: 'West Platform => Sides of Clone',
+          ko: '서쪽 플랫폼 => 분신 양 옆',
         },
         sidesEastPlatform: {
           en: 'East Platform => Sides of Clone',
+          ko: '동쪽 플랫폼 => 분신 양 옆',
         },
         frontBackEastPlatform: {
           en: 'East Platform => Front/Back of Clone',
+          ko: '동쪽 플랫폼 => 분신 앞/뒤',
         },
         frontBackWestPlatform: {
           en: 'West Platform => Front/Back of Clone',
+          ko: '서쪽 플랫폼 => 분신 앞/뒤',
         },
       },
     },
@@ -4434,6 +4599,7 @@ const triggerSet: TriggerSet<Data> = {
         intercards: Outputs.intercards,
         stack: {
           en: 'Stack ${dir1}/${dir2} + Lean Middle Out',
+          ko: '${dir1}/${dir2} 쉐어 + 중앙 바깥쪽으로 빼기',
         },
       },
     },
@@ -4455,9 +4621,11 @@ const triggerSet: TriggerSet<Data> = {
       outputStrings: {
         sides: {
           en: 'Sides of Clone',
+          ko: '분신 양 옆',
         },
         frontBack: {
           en: 'Front/Back of Clone',
+          ko: '분신 앞/뒤',
         },
       },
     },
