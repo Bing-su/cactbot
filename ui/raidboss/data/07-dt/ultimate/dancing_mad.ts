@@ -197,9 +197,12 @@ const triggerSet: TriggerSet<Data> = {
       comment: {
         en: `Clockwise: <a href="https://pastebin.com/7fs57PyQ" target="_blank">Kefka Bin</a><br />
           Filipino Box: <a href="https://raidplan.io/plan/5rf2uhud5ztsbud5" target="_blank">Raidplan</a>`,
+        ko: `시계방향: <a href="https://pastebin.com/7fs57PyQ" target="_blank">Kefka Bin</a><br />
+          Filipino Box: <a href="https://raidplan.io/plan/5rf2uhud5ztsbud5" target="_blank">Raidplan</a>`,
       },
       name: {
         en: 'P1 Graven Image 3 Tele-Portent Strategy',
+        ko: 'P1 신들의 상 3 텔레포 징 전략',
       },
       type: 'select',
       options: {
@@ -207,6 +210,11 @@ const triggerSet: TriggerSet<Data> = {
           'Tele-portent arrows placed pointing clockwise around the arena.': 'clockwise',
           'Tele-portent arrows placed in 4 small boxes along intercardinals.': 'filipino',
           'Call Debuffs only': 'none',
+        },
+        ko: {
+          '텔레포 화살표를 맵 둘레에 시계방향으로 배치합니다.': 'clockwise',
+          '텔레포 화살표를 대각선 방향의 네 구역에 각각 배치합니다.': 'filipino',
+          '디버프만 알림': 'none',
         },
       },
       default: 'none',
@@ -1081,12 +1089,15 @@ const triggerSet: TriggerSet<Data> = {
         },
         clockwise: {
           en: '${dir1} => ${dir2}',
+          ko: '${dir1} => ${dir2}',
         },
         filipino: {
           en: '${dir1} => ${dir2}',
+          ko: '${dir1} => ${dir2}',
         },
         onMarker: {
           en: 'On Marker',
+          ko: '징 위',
         },
         upupFilipino1: Outputs.southeast,
         downdownFilipino1: Outputs.northwest,
@@ -1094,27 +1105,35 @@ const triggerSet: TriggerSet<Data> = {
         leftleftFilipino1: Outputs.northeast,
         downleftFilipino1: {
           en: 'West of Southwest',
+          ko: '남서쪽 왼쪽',
         },
         downrightFilipino1: {
           en: 'Southeast Marker',
+          ko: '남동쪽 징',
         },
         rightupFilipino1: {
           en: 'Northeast Marker',
+          ko: '북동쪽 징',
         },
         rightdownFilipino1: {
           en: 'South of Southeast',
+          ko: '남동쪽 아래',
         },
         leftupFilipino1: {
           en: 'North of Northwest',
+          ko: '북서쪽 위',
         },
         leftdownFilipino1: {
           en: 'Southwest Marker',
+          ko: '남서쪽 징',
         },
         uprightFilipino1: {
           en: 'East of Northeast',
+          ko: '북동쪽 오른쪽',
         },
         upleftFilipino1: {
           en: 'Northwest Marker',
+          ko: '북서쪽 징',
         },
       },
     },
