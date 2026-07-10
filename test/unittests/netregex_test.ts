@@ -1,4 +1,4 @@
-import { assert } from 'chai';
+import { assert, describe, it } from 'vitest';
 
 import NetRegexes, { buildRegex } from '../../resources/netregexes';
 import examples, { type ExampleLineName } from '../../util/example_log_lines';

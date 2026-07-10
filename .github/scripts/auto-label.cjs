@@ -28,7 +28,7 @@ const regexLabelMap = {
   '^resources/': ['resources'],
   '^util/': ['util'],
   '^test/': ['test'],
-  '^\\.mocharc.cjs$': ['test'],
+  '^vitest\\.config\\.ts$': ['test'],
   '^eslint/': ['style'],
   '^\\.eslintrc\\.js$': ['style'],
   '^\\.github/': ['ci'],

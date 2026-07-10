@@ -2,7 +2,7 @@
 
 import path from 'path';
 
-import { assert } from 'chai';
+import { assert, beforeAll, describe, it } from 'vitest';
 
 // TODO: verify usage of matches vs capture: true in oopsy triggers
 
@@ -22,7 +22,7 @@ export const oopsyMistakeMapKeys: readonly (keyof OopsyMistakeMapFields)[] = [
 const testOopsyFile = (file: string, info: OopsyTriggerSetInfo) => {
   let triggerSet: LooseOopsyTriggerSet;
 
-  before(async () => {
+  beforeAll(async () => {
     // const contents = fs.readFileSync(file).toString();
 
     // Normalize path

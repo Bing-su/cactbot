@@ -1,8 +1,8 @@
-import assert from 'assert';
 import fs from 'fs';
 import path from 'path';
 
 import { exec } from '@actions/exec';
+import { afterEach, assert, describe, it } from 'vitest';
 
 const projectRoot = path.resolve('.');
 
@@ -12,9 +12,7 @@ describe('compile test', () => {
     fs.rmSync('dist', { recursive: true, force: true });
   });
 
-  it('npm package should compile successfully', async function() {
-    // eslint-disable-next-line @typescript-eslint/no-invalid-this
-    this.timeout(30000); // allow a 30s timeout
+  it('npm package should compile successfully', { timeout: 30000 }, async () => {
     let output = '';
     let exitCode = -1;
     try {
@@ -29,6 +27,6 @@ describe('compile test', () => {
     } catch (err) {
       console.error(err);
     }
-    assert(exitCode === 0, output);
+    assert.ok(exitCode === 0, output);
   });
 });

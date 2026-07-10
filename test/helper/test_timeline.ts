@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { assert } from 'chai';
+import { assert, beforeAll, describe, it } from 'vitest';
 
 import { keysThatRequireTranslation } from '../../resources/netregexes';
 import { UnreachableCode } from '../../resources/not_reached';
@@ -410,7 +410,7 @@ const testTimelineFiles = (timelineFiles: string[]): void => {
         let triggerSet: LooseTriggerSet;
         let timeline: TimelineParserLint;
 
-        before(async () => {
+        beforeAll(async () => {
           // Normalize path
           const importPath = `../../${
             path.relative(process.cwd(), triggersFile).replace('.ts', '.js')

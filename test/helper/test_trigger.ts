@@ -6,7 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { assert } from 'chai';
+import { afterAll, assert, beforeAll, describe, it } from 'vitest';
 
 import NetRegexes, { buildNetRegexForTrigger } from '../../resources/netregexes';
 import { UnreachableCode } from '../../resources/not_reached';
@@ -71,7 +71,7 @@ const testTriggerFile = (file: string, info: TriggerSetInfo) => {
   let contents: string;
   let triggerSet: LooseTriggerSet;
 
-  before(async () => {
+  beforeAll(async () => {
     contents = fs.readFileSync(file).toString();
     // Normalize path
     const importPath = `../../${path.relative(process.cwd(), file).replace('.ts', '.js')}`;
@@ -85,7 +85,7 @@ const testTriggerFile = (file: string, info: TriggerSetInfo) => {
     triggerSet = (await import(importPath)).default as LooseTriggerSet;
   });
 
-  after(() => {
+  afterAll(() => {
     NetRegexes.setFlagTranslationsNeeded(false);
   });
 
@@ -661,7 +661,8 @@ const testTriggerFile = (file: string, info: TriggerSetInfo) => {
                 );
               }
               const trimmedParam = paramParts[0] ?? param;
-              if (!Regexes.parse(`\\b${trimmedParam}\\s*:`).exec(funcStr)) {
+              const paramRegex = Regexes.parse(`\\b${trimmedParam}(?:\\s*:|\\b(?=\\s*[,}]))`);
+              if (!paramRegex.exec(funcStr)) {
                 assert.fail(
                   `'${id}' does not define param '${param}' for outputStrings entry '${key}'`,
                 );

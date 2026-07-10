@@ -1,4 +1,4 @@
-import { assert } from 'chai';
+import { assert, describe, it } from 'vitest';
 
 import contentList from '../../resources/content_list';
 import ZoneId from '../../resources/zone_id';
